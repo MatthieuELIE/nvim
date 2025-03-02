@@ -1,6 +1,6 @@
 {
-    "diagnostics.globals": [
-        "LazyVim",
-        "vim"
-    ]
+	"diagnostics.globals": [
+		"LazyVim",
+		"vim"
+	]
 }
