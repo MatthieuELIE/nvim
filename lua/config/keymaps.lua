@@ -1,3 +1,8 @@
+-- Set '-' to go to the end of the line in normal and visual modes
+vim.keymap.set({ "n", "x" }, "-", "$", { noremap = true })
+-- Set '0' to go to the first non-blank character of the line in normal and visual modes
+vim.keymap.set({ "n", "x" }, "0", "^", { noremap = true })
+
 -- quit file
 vim.keymap.set("n", "<C-q>", "<cmd> q <CR>", { noremap = true, silent = true })
 
