@@ -1,6 +1,11 @@
+-- Move faster
+vim.keymap.set({ "n", "x" }, "J", "12j", { noremap = true, silent = true })
+vim.keymap.set({ "n", "x" }, "K", "12k", { noremap = true, silent = true })
+vim.keymap.set({ "n", "x" }, "H", "6h", { noremap = true, silent = true })
+vim.keymap.set({ "n", "x" }, "L", "6l", { noremap = true, silent = true })
+
 -- Set '-' to go to the end of the line in normal and visual modes
 vim.keymap.set({ "n", "x" }, "-", "$", { noremap = true })
--- Set '0' to go to the first non-blank character of the line in normal and visual modes
 vim.keymap.set({ "n", "x" }, "0", "^", { noremap = true })
 
 -- quit file
@@ -22,7 +27,9 @@ vim.keymap.set("n", "<leader>+", "<C-a>", { noremap = true, silent = true, desc 
 vim.keymap.set("n", "<leader>-", "<C-x>", { noremap = true, silent = true, desc = "Decrement" }) -- decrement
 
 -- Press jk fast to exit insert mode
+vim.keymap.set("i", "jj", "<ESC>", { noremap = true, silent = true })
 vim.keymap.set("i", "jk", "<ESC>", { noremap = true, silent = true })
+vim.keymap.set("i", "kk", "<ESC>", { noremap = true, silent = true })
 vim.keymap.set("i", "kj", "<ESC>", { noremap = true, silent = true })
 
 -- Stay in indent mode
