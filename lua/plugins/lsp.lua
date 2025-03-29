@@ -23,7 +23,10 @@ return {
 				denols = {
 					root_dir = require("lspconfig").util.root_pattern({ "deno.json", "deno.jsonc" }),
 					single_file_support = false,
-					settings = {},
+					init_options = {
+						enable = true,
+						lint = true,
+					},
 				},
 				vtsls = {
 					-- explicitly add default filetypes, so that we can extend
